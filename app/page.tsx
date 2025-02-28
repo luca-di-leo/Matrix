@@ -38,6 +38,7 @@ export default function MatrixWebsite() {
           <QuoteSection />
           {/* Contact Section */}
           <ContactSection />
+          
           </main>
 
         <Footer />

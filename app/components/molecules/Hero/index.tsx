@@ -32,12 +32,13 @@ useEffect(() => {
                 />
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Button className="bg-[#00FF41] text-black hover:bg-[#00FF41]/80 border border-[#00FF41] px-8 py-6 text-lg">
+                <Button className="bg-[#00FF41] text-black hover:bg-[red]/60 hover:text-[#00FF41]
+                 border border-[#00FF41] px-8 py-6 text-lg">
                   Take the Red Pill
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-[#00FF41] text-[#00FF41] hover:bg-[#00FF41]/10 px-8 py-6 text-lg"
+                  className="border-[#00FF41] text-[#00FF41] hover:bg-[blue]/60 px-8 py-6 text-lg"
                 >
                   Take the Blue Pill
                 </Button>
