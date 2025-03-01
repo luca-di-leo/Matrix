@@ -8,9 +8,11 @@ const OraclePage: React.FC = () => {
     return (
 <div className="min-h-screen bg-black text-[#00FF41] font-mono overflow-hidden relative p-6">
     <DigitalRain
-    fontSize={4}
+    fontSize={12}
     color="#FFFFFF"
-    speed={1}
+    characters='abcdefghijklmnopqrstuvwxyz'
+    speed={60}
+    backgroundOpacity={0.4}
     />
     
       <div className="max-w-4xl mx-auto relative">

@@ -6,7 +6,9 @@ const DigitalRain: FC<DigitalRainProps> = ({
   fontSize = 14,
   color = "#00FF41",
   speed = 35,
-  characters = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  characters = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  backgroundOpacity = 0.05, // Nuova prop per controllare la trasparenza dello sfondo
+
 }) => {
   // Qui stiamo prendendo l'oggetto canvas nel DOM
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -41,7 +43,7 @@ const DigitalRain: FC<DigitalRainProps> = ({
     const draw = () => {
       // Funzione per disegnare il testo sul canvas
       // Qui si cancella leggermente il frame precedente disegnando un rettangolo nero trasparente sopra l'intero canvas
-      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+      ctx.fillStyle = `rgba(0, 0, 0, ${backgroundOpacity})`; 
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       ctx.fillStyle = color; // Imposta il colore del testo passato come prop (default: verde luminoso)
@@ -75,7 +77,7 @@ const DigitalRain: FC<DigitalRainProps> = ({
       clearInterval(interval);
       window.removeEventListener("resize", resizeCanvas);
     };
-  }, [fontSize, color, speed, characters]); // Aggiorna l'effetto quando cambiano le props
+  }, [fontSize, color, speed, characters, backgroundOpacity]); // Aggiorna l'effetto quando cambiano le props
 
   // Il <canvas> è un elemento HTML che permette di disegnare grafici, immagini e animazioni direttamente nella pagina web.
   // Funziona come una tela (come un foglio di carta) su cui puoi "disegnare" usando JavaScript.
