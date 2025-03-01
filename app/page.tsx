@@ -10,8 +10,16 @@ import ContactSection from "@molecules/ContactSection"
 import CharacterSection from "@molecules/CharacterSection"
 import QuoteSection from "@molecules/QuoteSection"
 import WhiteRabbit from "@atoms/Rabbit"
+import { useEffect } from "react"
 
 export default function MatrixWebsite() {
+
+  useEffect(() => {
+    // Aggiungi un commento al DOM
+    const comment = document.createComment("The Matrix has you. Wake up, Neo...");
+    document.body.appendChild(comment);
+  }, []);
+  
   console.log(`
     %cWelcome to the Real World.
     Follow the white rabbit...
