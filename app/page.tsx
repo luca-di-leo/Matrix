@@ -13,6 +13,7 @@ import AboutSection from "@molecules/AboutSection"
 import ContactSection from "@molecules/ContactSection"
 import CharacterSection from "@molecules/CharacterSection"
 import QuoteSection from "@molecules/QuoteSection"
+import WhiteRabbit from "@atoms/Rabbit"
 
 export default function MatrixWebsite() {
 
@@ -38,7 +39,12 @@ export default function MatrixWebsite() {
           <QuoteSection />
           {/* Contact Section */}
           <ContactSection />
-          
+          <WhiteRabbit
+              visibilityDuration={2000} // Visibile per 2 secondi
+              reappearanceIntervalMin={3000} // Riapparizione minima: 3 secondi
+              reappearanceIntervalMax={15000} // Riapparizione massima: 15 secondi
+              onClick={() => window.location.href = "/secret"} // Reindirizza all'url segreto
+            />
           </main>
 
         <Footer />
