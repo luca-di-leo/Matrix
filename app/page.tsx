@@ -27,7 +27,12 @@ export default function MatrixWebsite() {
   return (
     <div className="min-h-screen bg-black text-[#00FF41] font-mono overflow-hidden relative">
       {/* Digital Rain Canvas Background */}
-      <DigitalRain />
+      <DigitalRain 
+      fontSize = {14}
+      color = "#00FF41"
+      speed = {35}
+      characters = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"    
+      />
 
       {/* Content Container */}
       <div className="relative z-10">
@@ -49,7 +54,7 @@ export default function MatrixWebsite() {
           <WhiteRabbit
               visibilityDuration={2000} // Visibile per 2 secondi
               reappearanceIntervalMin={3000} // Riapparizione minima: 3 secondi
-              reappearanceIntervalMax={15000} // Riapparizione massima: 15 secondi
+              reappearanceIntervalMax={10000} // Riapparizione massima: 15 secondi
               onClick={() => window.location.href = "/secret"} // Reindirizza all'url segreto
             />
           </main>

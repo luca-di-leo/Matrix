@@ -28,13 +28,15 @@ export default function SecretPage() {
 
     
     <div className="min-h-screen bg-black text-[#00FF41] font-mono overflow-hidden relative p-6">
-   <DigitalRain 
-  fontSize={8} 
-  color="#FF0000" 
-  speed={10} 
-  characters="NO" 
-/>
-        <div className="relative z-10">
+        <DigitalRain
+          fontSize={8} 
+          color="#FF0000" 
+          speed={500} 
+          characters="no" 
+        />
+
+        <div className=""> 
+          {/* Mettere relative e z-10 per fare in modo che il contenutio non venga coperto dal digital rain */}
 
       <main className="max-w-4xl mx-auto">
 
