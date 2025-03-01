@@ -16,7 +16,10 @@ import QuoteSection from "@molecules/QuoteSection"
 import WhiteRabbit from "@atoms/Rabbit"
 
 export default function MatrixWebsite() {
-
+  console.log(`
+    %cWelcome to the Real World.
+    Follow the white rabbit...
+  `, "color: green; font-size: 20px;");
   return (
     <div className="min-h-screen bg-black text-[#00FF41] font-mono overflow-hidden relative">
       {/* Digital Rain Canvas Background */}
