@@ -1,10 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
-import { ChevronDown, Contact, FunctionSquareIcon, Menu, X } from "lucide-react"
-import Link from "next/link"
-import TypewriterEffect from "@molecules/TypewriterEffect"
-import { Button } from "./components/ui/button"
+
 import DigitalRain from "@molecules/DigitalRain"
 import Header from "@molecules/Header"
 import Footer from "@molecules/Footer"
