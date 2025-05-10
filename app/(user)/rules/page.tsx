@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import { Menu, X, ArrowLeft, Shield, AlertTriangle, Lock, Eye, Code, Zap } from "lucide-react"
 import Link from "next/link"
-import { Button } from "./components/ui/button"
+import { Button } from "../../components/ui/button"
 import DigitalRain from "@molecules/DigitalRain"
 import Head from "next/head"
 import Header from "@molecules/Header"
